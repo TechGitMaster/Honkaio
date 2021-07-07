@@ -1,0 +1,213 @@
+<div class="container-fluid">
+    <div class="container-navi container-fluid">
+        <div class="conConNavi container">
+            <div class="row p-2">
+                <div class="sss col-md-4 ">
+                        <div class="asd col-lg-2 col-md-3 col-sm-2 col-2">
+                            <img class="img-v img-responsive" src="../assets/st,small,845x845-pad,1000x1000,f8f8f8.u9.jpg" />
+                        </div>
+                        <div class="ss col-lg-10 col-md-10 col-sm-10 col-10">Evergarden Story</div>
+                </div>
+                <div class="col-md-7 p-3 naviContainer">
+                        <div class="col navigationChoose">
+                            <div class="navi col-lg-2 col-md-2 col-sm-2 col-2 p-2">Home</div>
+                            <div class="navi col-lg-2 col-md-3 col-sm-3 col-3 p-2">Characters</div>
+                            <div class="navi col-lg-1 col-md-2 col-sm-2 col-2 p-2">About</div>
+                            <div class="navi col-lg-3 col-md-4 col-sm-4 col-2 p-2">Anime Details</div>
+                            <div class="navi col-lg-1 col-md-1 col-sm-1 col-1 p-2">More</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="containerHomeFluid container-fluid">
+        <div class="div-HomeE"> 
+            <img src="../assets/Home.jpg" class="imgHome img-responsive" />
+        </div>
+        <div class="div-HomeA">
+            <div class="containerAH container">
+                <div class="div-AH col">
+                    <div class="fonts col">
+                        <h1 class="fontHA">Kyoto Animation</h1>
+                    </div>
+                    <div class="fonts col-9">
+                        <h5 class="font2HA">
+                            Kyoto Animation Co., Ltd., often abbreviated KyoAni, is a Japanese animation studio and light novel publisher located in Uji, Kyoto Prefecture. Founded in 1981 by Yoko and Hideaki Hatta.
+                        </h5>
+                    </div>
+                    <div class="bttnFont col">
+                        <Button class="bttnViewPage btn btn-success p-2">Visit Webpage</Button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="characterP container-fluid">
+        <div class="containerCha container">
+            <div class="container">
+            <div class="sentenceCha col">
+                <p class="pCha"><strong></strong></p>
+            </div>
+            <div class="row">
+                <div *ngFor="let cTask of imgCharacters; index as num" [ngClass]="'designCha col-lg-3 col-md-4 col-sm-6 col-12'">
+                    <div class="card-cha1 card">
+                        <div class="card-Cha card-body">
+                            <img [src]="cTask[0]" class="srcImgCha img-fluid" />
+                            <div class="cardTitle card-title">
+                                <h5>{{cTask[1]}}</h5>
+                            </div>
+                            <div class="card-text">
+                                {{cTask[2]}}
+                            </div>
+                            <div class="cardFot card-footer p-1">
+                               <Button class="bttn-Cha btn btn-success">Read more</Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="imageFirst-page container-fluid">
+        <div class="containerShadow">
+                <img class="image_First img-responsive" src="../assets/firstpage.jpg" />
+        </div>
+        <div class="asdss">
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="sssss col-lg-6 col-md-12">
+                    <div class="containShadow">
+                        <div class="divForP">
+                            <div class="row">
+                                <div class="asd col-lg-12 bg-primary">
+                                    <img src="../assets/maxresdefault.jpg" class="imgSeC img-fluid" />
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="pFirst">Violet Evergarden is a series about the written word and the value of letters. It uses anachronistic Victorian-era settings as a purposeful backdrop to Violet’s new job transcribing letters and documents as an auto memoir doll, and goes one step further in showcasing other ways that messages could more slyly be sent through gifts like flowers. In the opening sequence of the first episode, the first thing Violet does after waking up in a hospital is write a “report” to her former commanding officer, Major Gilbert Bougainvillea. The more we learn about Violet, the more we realize that the first act during her recovery is an emotional response, riddled with feelings that she doesn’t yet recognize or understand.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="containerDetails container-fluid">
+        <div class="container">
+            <div class="col p-4">
+                <h2 class="deT"></h2>
+            </div>
+            <div class="sss row">
+                <div *ngFor="let vDetails of imgDetails; index as num" 
+                [ngClass]="(num+1) < 3 ? 'colDe col-lg-10 col-md-10':'colDe col-lg-10 col-md-10'" >
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12 p-1">
+                            <div class="seriesD">
+                                <img [src]="vDetails[0]" class="imgSeries img-responsive" />
+                            </div>
+                        </div>
+                        <div class="colPaD col-lg-7 col-md-12 ">
+                            <div class="row">
+                                <div class="PDocA col-12">
+                                    <h4>{{vDetails[1]}}</h4>
+                                    <h5 class="season1">{{vDetails[2]}}</h5>
+                                    <div class="classesP col-lg-11 col-md-11 col-12">
+                                        <p class="season1P">{{vDetails[3]}}</p>
+                                    </div>
+                                </div>
+                                <div class="colPa col-12">
+                                    <div class="row">
+                                        <div class="pag ol-lg-6 col-md-6 col-sm-3">
+                                            <p class="type">Type: <span class="pAD">{{vDetails[4]}}</span></p>
+                                        </div>
+                                        <div class="pag col-lg-6 col-md-6 col-sm-3">
+                                                <p class="type">Rating: <span class="pAD">
+                                                    {{vDetails[5]}}</span></p>
+                                        </div>
+                                        <div class="pag col-lg-6 col-md-6 col-sm-3">
+                                            <p class="type">Genre: <span class="pAD">
+                                                {{vDetails[6]}} </span></p>
+                                        </div>
+                                        <div class="pag col-lg-6 col-md-6 col-sm-3">
+                                            <p class="type">Date aired: <span class="pAD">
+                                                {{vDetails[7]}}</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="moreCon container-fluid">
+        <div class="divM"> 
+        <div class="container p-3">
+            <div class="col">
+                <img src="../assets/logo.png" class="img-fluid" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="classPM">
+                <h4>Ongoing movies</h4>
+            </div>
+            <owl-carousel-o [options]="customOptions">
+
+                <ng-container *ngFor="let slide of imgMore"  class="asdssdsdsd">
+                  <ng-template carouselSlide [id]="slide.id">
+                    <div class="divImg">
+                        <div class="asdsssaaa">
+                            <img [id]="slide.id" [src]="slide.src" [alt]="slide.alt" [title]="slide.title" class="img-responsive">
+                            <div class="asdsssss"></div>
+                        </div>
+                        
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+              <div class="divWatchMovie">
+                    <h4 class="finisedMov">Finished Airing</h4>
+                    <div class="divWatchMov">
+                        <div class="row">
+                            <div class="colMW col-lg-4 col-md-6 col-12" *ngFor="let vMoreW of imgMoreWatch; index as numMW">
+                                <div class="divRowsM">
+                                    <img [src]="vMoreW[0]" class="simgMore img-responsive" />
+                                    <div class="nameShadow">
+                                        <div class="shadowName"></div>
+                                        <div class="nameCha" >
+                                            <p class="padTitle">Title: {{vMoreW[1]}}</p>
+                                            <p>Range: {{vMoreW[2]}}</p>
+                                            <button class="btnWatch btn">Watch</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+

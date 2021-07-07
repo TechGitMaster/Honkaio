@@ -1,0 +1,441 @@
+*{
+    margin:auto;
+    padding:0px;
+}
+.container-navi{
+    background-color:#1C4670;
+    margin:auto;
+    padding:0px;
+}
+
+
+.navi{
+    text-align:center;
+    color:#EAEAE0;
+    cursor:pointer;
+}
+.navigationChoose{
+    display:flex;
+    margin:auto;
+    margin-left:10px;
+}
+.img-v{
+    width:50px;
+    height:50px;
+    border-radius:50%; 
+    margin:auto;
+    margin-right:0px;
+    display:block;
+    box-shadow:1px 1px 1px black;
+}
+.ss{
+    margin:auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    color:#EAEAE0;
+    margin-left:5px;
+}
+.sss{
+    display:flex;
+}
+
+
+.containerHomeFluid{
+    height:580px;
+    overflow:hidden;
+}
+.div-HomeE{
+    z-index:1;
+    width:100%;
+    max-height:580px;
+    overflow:hidden;
+    background-color:rgb(0, 0, 0);
+    position:absolute;
+}
+.div-HomeA{
+    z-index:2;
+    position:relative;
+}
+
+.imgHome{
+    opacity: 0.8;
+    min-width:100%;
+}
+.containerAH{
+    height:580px;
+}
+.fonts{
+    margin-bottom: 10px;
+}
+.fontHA{
+    text-align: center;
+    text-shadow:1px 1px 5px black;
+    font-size:50px;
+    color:white;
+}
+.font2HA{
+    text-align:center;
+    text-shadow:1px 1px 5px black;
+    color:White;
+    font-size:15px;
+    padding:10px;
+}
+.bttnFont{
+    display:flex;
+    justify-content: center;
+}
+.bttnViewPage{
+    margin-top:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow:1px 1px 5px black;
+}
+.div-AH{
+    margin-top:150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.imageFirst-page{
+    background:black;
+}
+
+.containerShadow{
+    width:100%;
+    height:550px;
+    overflow:hidden;
+    z-index:1;
+    position:absolute;
+
+}
+.imageFirst-page {
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+.image_First{
+    z-index:1;
+    min-width:100%;
+}
+.asdss{
+    min-height:550px;
+    z-index:3;
+    position:relative;
+}
+.sssss{
+    box-shadow:-4px 0px 5px black;
+    border-radius:5px;
+}
+.containShadow{
+    background-color:rgba(0, 0, 0, 0.808);
+    min-height:550px;
+    width:100%;
+}
+.divForP{
+    max-width:700px;
+    min-height:550px;
+    padding:10px;
+}
+.asd{
+    overflow:hidden;
+    max-height:250px;
+}
+.pFirst{
+    color:white;
+    text-align: justify;
+    padding:10px;
+}
+
+
+
+.containerCha{
+    margin-bottom:30px;
+}
+.characterP {
+    background:url('../assets/more/mainVisualWrapBg.png');
+}
+
+.showAbout{
+    width:100%;
+    height:120vh;
+    background-color:rgba(0, 0, 0, 0.815);
+    position:relative;
+    top:-0px;
+}
+
+.col-1A{
+    min-width:100%;
+    height:300px;
+    overflow:hidden;
+    padding:15px;
+    box-shadow: inset 0px -1px 100px rgb(0, 0, 0);
+}
+.pCha{
+    text-align: center;
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.designCha{
+    display:flex;
+    justify-content: center;
+    padding-top:10px;
+    overflow:hidden;
+}
+.sentenceCha{
+    padding:10px;
+}
+.card-cha1{
+    background-color: #FFDADA;
+    border:none;
+    margin-left:5px;
+    margin-right:5px;
+    max-width:300px;
+    text-align: justify;
+}
+.cardTitle{
+    padding:5px;
+}
+.card-text{
+    overflow:hidden;
+    max-height:80px;
+    padding-left:5px;
+    padding-right:5px;
+    font-size: 13px;
+}
+.card-Cha{
+    padding:15px;
+}
+.srcImgCha{
+    width:100%;
+    height:230px;
+}
+.cardFot{
+    border:none;
+    background:none;
+
+}
+.bttn-Cha{
+    padding:5px;
+    box-shadow:1px 3px 5px rgba(0, 0, 0, 0.705);
+}
+
+
+
+
+
+
+
+
+.containerDetails{
+    background-color:#0b0c2a;
+}
+.deT{
+    color:wheat;
+}
+.imgSeries{
+    min-width:100%;
+    height:100%;
+}
+.seriesD{
+    height:350px;
+    overflow:hidden;
+    border-radius:5px;
+    box-shadow: 2px 2px 5px black;
+}
+.PDocA{
+    color:whitesmoke;
+    margin-left:5px;
+}
+.colPaD{
+    margin:0px;
+    padding:0px;
+}
+.season1{
+    font-size:16px;
+    margin-top:10px;
+    color:#b7b7b7;
+}
+
+.season1P{
+    font-size:16px;
+    margin-top:10px;
+    color:#b7b7b7;
+
+}
+.classesP {
+    float:left;
+}
+
+.colPa{
+    padding:10px;
+}
+.type{
+    color:rgb(235, 180, 63)
+}
+.pAD{
+    color:white;
+}
+.pag{
+    margin:0px;
+    padding:0px;
+}
+.sss{
+    padding:10px;
+}
+
+
+
+
+
+
+
+
+
+.moreCon{
+    background-color:#f8f9fa;
+    background:url('../assets/more/mainVisualWrapBg.png');
+}
+.divM{
+    z-index:2;
+    position:relative;
+}
+
+.asdsssaaa{
+    z-index:1;
+    max-width:800px;
+    max-height:350px;
+    position:relative;
+}
+
+.divImg{
+    margin-left:10px;
+    margin-right:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:-1px 1px 5px black;
+    cursor:pointer;
+}
+.classPM{
+    padding:15px;
+}
+.asdsssss{
+    z-index:3;
+    width:100%;
+    height:100%;
+    /*box-shadow: inset -5px 0px 50px #000000;*/
+    position:absolute;
+    top:-0px;
+}
+.divWatchMov{
+    margin-top:10px;
+}
+@media (max-width: 490px){
+    .divRowsM{
+        max-width:100%;
+        max-height:280px;
+        border-radius:10px;
+        margin-left:15px;
+        margin-right:15px;
+        overflow:hidden;
+        box-shadow:-1px 3px 10px black;
+        background:black;
+        position:relative;
+    }
+    .simgMore{
+        width:100%;
+        max-height:280px;
+    }
+}
+@media (min-width: 500px){
+    .divRowsM{
+        max-width:100%;
+        min-height:280px;
+        border-radius:10px;
+        margin-left:15px;
+        margin-right:15px;
+        margin-top:10px;
+        margin-bottom:10px;
+        overflow:hidden;
+        box-shadow:-1px 3px 10px black;
+        background:black;
+        position:relative;
+    }
+    .simgMore{
+        width:100%;
+        min-height:280px;
+    }
+}
+
+
+.divWatchMovie{
+    margin-bottom:100px;
+}
+.finisedMov{
+    padding-left:15px;
+}
+.nameShadow{
+    width:100%;
+    min-height:100%;
+    display:flex;
+    position:absolute;
+    top:-0px;
+}
+.shadowName{
+    z-index:1;
+    width:100%;
+    min-height:120px;
+    border:none;
+    filter:blur(6px);
+    box-shadow:-1px -4px 5px black;
+    background-color:rgba(0, 0, 0, 0.616);
+    color:black;
+    position:absolute;
+    bottom:0px;
+}
+.colMW{
+    margin-top:10px;
+    overflow:hidden;
+}
+.nameCha{
+    z-index:2;
+    width:100%;
+    min-height:120px;
+    color:white;
+    padding:10px;
+    position:absolute;
+    bottom:0px;
+}
+.padTitle{
+    margin-top:10px;
+}
+.btnWatch{
+    padding:3px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-top:5px;
+    box-shadow:-3px 3px 10px black;
+    border-radius:5px;
+    color:black;
+    background-image: linear-gradient( to left, rgb(237, 181, 245) , rgb(228, 151, 235));
+}
+
+
+
+
+
+
+
+
+
+
