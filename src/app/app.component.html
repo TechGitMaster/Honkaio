@@ -2,19 +2,26 @@
     <div class="container-navi container-fluid">
         <div class="conConNavi container">
             <div class="row p-2">
-                <div class="sss col-md-4 ">
-                        <div class="asd col-lg-2 col-md-3 col-sm-2 col-2">
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                    <div class="row ">
+                        <div class="col-lg-2 col-md-3 col-sm-2 col-2">
                             <img class="img-v img-responsive" src="../assets/st,small,845x845-pad,1000x1000,f8f8f8.u9.jpg" />
                         </div>
-                        <div class="ss col-lg-10 col-md-10 col-sm-10 col-10">Evergarden Story</div>
+                        <div class="ss col-lg-10 col-md-10 col-sm-10 col-10">
+                            <span class="spanCall">
+                                Evergarden Story
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-7 p-3 naviContainer">
-                        <div class="col navigationChoose">
-                            <div class="navi col-lg-2 col-md-2 col-sm-2 col-2 p-2">Home</div>
-                            <div class="navi col-lg-2 col-md-3 col-sm-3 col-3 p-2">Characters</div>
-                            <div class="navi col-lg-1 col-md-2 col-sm-2 col-2 p-2">About</div>
-                            <div class="navi col-lg-3 col-md-4 col-sm-4 col-2 p-2">Anime Details</div>
-                            <div class="navi col-lg-1 col-md-1 col-sm-1 col-1 p-2">More</div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-12 p-3 naviContainer ">
+                        <div class="row navigationChoose">
+                            <div id="asd" class="navi col-lg-2 col-md-2 col-sm-2 col-2 p-2" (click)="clicked('home', $event)">Home</div>
+                            <div class="navi col-lg-2 col-md-3 col-sm-3 col-3 p-2" 
+                            (click)="clicked('characters')">Characters</div>
+                            <div class="navi col-lg-1 col-md-2 col-sm-2 col-2 p-2" (click)="clicked('about')">About</div>
+                            <div class="navi col-lg-3 col-md-4 col-sm-4 col-3 p-2" (click)="clicked('details')">Anime Details</div>
+                            <div class="navi col-lg-1 col-md-1 col-sm-1 col-2 p-2" (click)="clicked('more')">More</div>
                         </div>
                 </div>
             </div>
@@ -22,7 +29,7 @@
     </div>
 
 
-    <div class="containerHomeFluid container-fluid">
+    <div class="containerHomeFluid container-fluid" id="home">
         <div class="div-HomeE"> 
             <img src="../assets/Home.jpg" class="imgHome img-responsive" />
         </div>
@@ -45,7 +52,7 @@
         </div>
     </div>
 
-    <div class="characterP container-fluid">
+    <div class="characterP container-fluid" id="characters">
         <div class="containerCha container">
             <div class="container">
             <div class="sentenceCha col">
@@ -74,7 +81,7 @@
     </div>
 
 
-    <div class="imageFirst-page container-fluid">
+    <div class="imageFirst-page container-fluid" id="about">
         <div class="containerShadow">
                 <img class="image_First img-responsive" src="../assets/firstpage.jpg" />
         </div>
@@ -101,7 +108,7 @@
     </div>
 
 
-    <div class="containerDetails container-fluid">
+    <div class="containerDetails container-fluid" id="details">
         <div class="container">
             <div class="col p-4">
                 <h2 class="deT"></h2>
@@ -154,7 +161,7 @@
 
 
 
-    <div class="moreCon container-fluid">
+    <div class="moreCon container-fluid" id="more">
         <div class="divM"> 
         <div class="container p-3">
             <div class="col">
@@ -183,9 +190,9 @@
                     <h4 class="finisedMov">Finished Airing</h4>
                     <div class="divWatchMov">
                         <div class="row">
-                            <div class="colMW col-lg-4 col-md-6 col-12" *ngFor="let vMoreW of imgMoreWatch; index as numMW">
+                            <div class="colMW col-lg-4 col-md-6" *ngFor="let vMoreW of imgMoreWatch; index as numMW">
                                 <div class="divRowsM">
-                                    <img [src]="vMoreW[0]" class="simgMore img-responsive" />
+                                    <img [src]="vMoreW[0]" class="simgMore" />
                                     <div class="nameShadow">
                                         <div class="shadowName"></div>
                                         <div class="nameCha" >

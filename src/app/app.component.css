@@ -17,7 +17,6 @@
 .navigationChoose{
     display:flex;
     margin:auto;
-    margin-left:10px;
 }
 .img-v{
     width:50px;
@@ -28,16 +27,13 @@
     display:block;
     box-shadow:1px 1px 1px black;
 }
-.ss{
-    margin:auto;
+.spanCall{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:20px;
     color:#EAEAE0;
-    margin-left:5px;
+    margin-left:3px;
 }
-.sss{
-    display:flex;
-}
+
 
 
 .containerHomeFluid{
@@ -78,7 +74,6 @@
     text-shadow:1px 1px 5px black;
     color:White;
     font-size:15px;
-    padding:10px;
 }
 .bttnFont{
     display:flex;
@@ -340,7 +335,7 @@
 .divWatchMov{
     margin-top:10px;
 }
-@media (max-width: 490px){
+@media (max-width: 499px){
     .divRowsM{
         max-width:100%;
         max-height:280px;
@@ -354,7 +349,7 @@
     }
     .simgMore{
         width:100%;
-        max-height:280px;
+        height:280px;
     }
 }
 @media (min-width: 500px){
@@ -373,7 +368,7 @@
     }
     .simgMore{
         width:100%;
-        min-height:280px;
+        height:280px;
     }
 }
 
@@ -387,7 +382,6 @@
 .nameShadow{
     width:100%;
     min-height:100%;
-    display:flex;
     position:absolute;
     top:-0px;
 }
@@ -404,6 +398,7 @@
     bottom:0px;
 }
 .colMW{
+  
     margin-top:10px;
     overflow:hidden;
 }

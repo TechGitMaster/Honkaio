@@ -19,9 +19,9 @@ export class AppComponent {
     autoplaySpeed: 1000,
     autoplayTimeout: 5000,
     autoplayMouseleaveTimeout: 5000,
-    stagePadding: 50,
     autoplayHoverPause: true,
     navText: ['', ''],
+    center: true,
     responsive: {
       0: {
         items: 1
@@ -123,7 +123,11 @@ export class AppComponent {
   ];
 
   constructor(){
+    
+  }
 
+  clicked(element: string, elementRef: any){
+    document.getElementById(element)?.scrollIntoView();
   }
 
 
