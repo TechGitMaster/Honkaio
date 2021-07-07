@@ -126,7 +126,7 @@ export class AppComponent {
     
   }
 
-  clicked(element: string, elementRef: any){
+  clicked(element: string){
     document.getElementById(element)?.scrollIntoView();
   }
 
