@@ -14,7 +14,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-12 col-12 p-3 naviContainer ">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-12 p-3">
                         <div class="row navigationChoose">
                             <div id="asd" class="navi col-lg-2 col-md-2 col-sm-2 col-2 p-2" (click)="clicked('home')">Home</div>
                             <div class="navi col-lg-3 col-md-4 col-sm-4 col-3 p-2" 
@@ -45,7 +45,9 @@
                         </h5>
                     </div>
                     <div class="bttnFont col">
-                        <Button class="bttnViewPage btn btn-success p-2">Visit Webpage</Button>
+                        <a href="http://www.kyotoanimation.co.jp/en/">
+                            <Button class="bttnViewPage btn btn-success p-2">Visit Webpage</Button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -70,7 +72,9 @@
                                 {{cTask[2]}}
                             </div>
                             <div class="cardFot card-footer p-1">
-                               <Button class="bttn-Cha btn btn-success">Read more</Button>
+                                <a [href]="cTask[3]">
+                                    <Button class="bttn-Cha btn btn-success">Read more</Button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -174,11 +178,12 @@
                 <ng-container *ngFor="let slide of imgMore"  class="asdssdsdsd">
                   <ng-template carouselSlide [id]="slide.id">
                     <div class="divImg">
-                        <div class="asdsssaaa">
-                            <img [id]="slide.id" [src]="slide.src" [alt]="slide.alt" [title]="slide.title" class="img-responsive">
-                            <div class="asdsssss"></div>
-                        </div>
-                        
+                        <a [href]="slide.href">
+                            <div class="asdsssaaa">
+                                <img [id]="slide.id" [src]="slide.src" [alt]="slide.alt" [title]="slide.title" class="img-responsive">
+                                <div class="asdsssss"></div>
+                            </div>
+                        </a>
                     </div>
                   </ng-template>
                 </ng-container>
@@ -195,7 +200,9 @@
                                         <div class="nameCha" >
                                             <p class="padTitle">Title: {{vMoreW[1]}}</p>
                                             <p>Range: {{vMoreW[2]}}</p>
-                                            <button class="btnWatch btn">Watch</button>
+                                            <a [href]="vMoreW[3]">
+                                                <button class="btnWatch btn">Watch</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

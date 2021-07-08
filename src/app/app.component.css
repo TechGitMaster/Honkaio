@@ -9,6 +9,22 @@
 }
 
 
+@media (min-width: 768px){
+    .container-navi{
+        padding-bottom:0px;
+        padding-top:0px;
+    }
+}
+
+@media (max-width: 767px){
+    .container-navi{
+        padding-bottom:10px;
+        padding-top:10px;
+    }
+}
+
+
+
 .navi{
     text-align:center;
     color:#EAEAE0;
@@ -69,7 +85,7 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 541px){
+@media (min-width: 696px){
 .fontHA{
     text-align: center;
     text-shadow:1px 1px 5px black;
@@ -90,7 +106,7 @@
 }
 }
 
-@media (max-width: 540px){
+@media (max-width: 695px){
     .fontHA{
         text-align: center;
         text-shadow:1px 1px 5px black;
@@ -144,6 +160,7 @@
 }
 
 .asdss{
+    overflow:hidden;
     min-height:550px;
     z-index:3;
     position:relative;
@@ -278,7 +295,10 @@
 }
 .colPaD{
     margin:0px;
-    padding:0px;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 .season1{
     font-size:16px;
@@ -356,7 +376,7 @@
     z-index:3;
     width:100%;
     height:100%;
-    /*box-shadow: inset -5px 0px 50px #000000;*/
+    box-shadow: inset -5px 0px 20px #000000;
     position:absolute;
     top:-0px;
 }
