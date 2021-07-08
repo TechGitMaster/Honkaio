@@ -43,7 +43,7 @@
 .div-HomeE{
     z-index:1;
     width:100%;
-    max-height:580px;
+    height:580px;
     overflow:hidden;
     background-color:rgb(0, 0, 0);
     position:absolute;
@@ -55,37 +55,67 @@
 
 .imgHome{
     opacity: 0.8;
-    min-width:100%;
+    width:100%;
+    min-height:580px;
+    object-fit: cover;
 }
 .containerAH{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     height:580px;
 }
 .fonts{
     margin-bottom: 10px;
 }
+
+@media (min-width: 541px){
 .fontHA{
     text-align: center;
     text-shadow:1px 1px 5px black;
     font-size:50px;
     color:white;
 }
+
 .font2HA{
     text-align:center;
     text-shadow:1px 1px 5px black;
     color:White;
     font-size:15px;
 }
-.bttnFont{
-    display:flex;
-    justify-content: center;
-}
 .bttnViewPage{
     margin-top:10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow:1px 1px 5px black;
 }
-.div-AH{
-    margin-top:150px;
+}
+
+@media (max-width: 540px){
+    .fontHA{
+        text-align: center;
+        text-shadow:1px 1px 5px black;
+        font-size:43px;
+        color:white;
+    }
+    
+    .font2HA{
+        text-align:center;
+        text-shadow:1px 1px 5px black;
+        color:White;
+        font-size:13px;
+    }
+    .bttnViewPage{
+        width:130px;
+        margin-top:10px;
+        font-size:14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow:1px 1px 5px black;
+    }
+}
+
+.bttnFont{
+    display:flex;
+    justify-content: center;
 }
 
 
@@ -100,32 +130,26 @@
 
 
 .imageFirst-page{
-    background:black;
-}
-
-.containerShadow{
-    width:100%;
-    height:550px;
-    overflow:hidden;
-    z-index:1;
-    position:absolute;
+    background: url('../assets/firstpage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
 
 }
+
 .imageFirst-page {
     margin:auto;
     justify-content: center;
     align-items: center;
 }
-.image_First{
-    z-index:1;
-    min-width:100%;
-}
+
 .asdss{
     min-height:550px;
     z-index:3;
     position:relative;
 }
 .sssss{
+    min-height:550px;
     box-shadow:-4px 0px 5px black;
     border-radius:5px;
 }
@@ -211,6 +235,7 @@
 }
 .srcImgCha{
     width:100%;
+    object-fit: cover;
     height:230px;
 }
 .cardFot{
@@ -237,8 +262,9 @@
     color:wheat;
 }
 .imgSeries{
-    min-width:100%;
+    width:100%;
     height:100%;
+    object-fit: cover;
 }
 .seriesD{
     height:350px;
@@ -300,6 +326,7 @@
     background:url('../assets/more/mainVisualWrapBg.png');
 }
 .divM{
+    margin-bottom:20px;
     z-index:2;
     position:relative;
 }
@@ -307,13 +334,14 @@
 .asdsssaaa{
     z-index:1;
     max-width:800px;
+    display:flex;
     max-height:350px;
     position:relative;
 }
 
 .divImg{
     margin-left:10px;
-    margin-right:5px;
+    margin-right:10px;
     margin-top:5px;
     margin-bottom:5px;
     border-radius:10px;
@@ -347,10 +375,10 @@
         background:black;
         position:relative;
     }
-    .simgMore{
+   /* .simgMore{
         width:100%;
         height:280px;
-    }
+    }*/
 }
 @media (min-width: 500px){
     .divRowsM{
@@ -366,15 +394,17 @@
         background:black;
         position:relative;
     }
-    .simgMore{
+    /*.simgMore{
         width:100%;
         height:280px;
-    }
+    }*/
 }
 
 
-.divWatchMovie{
-    margin-bottom:100px;
+.simgMore{
+    width:100%;
+    height:280px;
+    object-fit: cover;
 }
 .finisedMov{
     padding-left:15px;
@@ -424,6 +454,69 @@
     color:black;
     background-image: linear-gradient( to left, rgb(237, 181, 245) , rgb(228, 151, 235));
 }
+
+
+
+
+
+
+
+.conFooter{
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color:#1C4670;
+}
+.divclassesIm{
+    width:110px;
+    height:110px;
+    overflow:hidden;
+    margin-bottom:10px;
+    border-radius:50%;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.863);
+}   
+.imageFoot{
+    width:100%;
+    height:110px;
+    object-fit: cover;
+}
+
+@media (min-width:501px){
+    .state{
+        text-align: center;
+        padding-left:5px;
+        padding-right:5px;
+        color:#EAEAE0;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size:25px;
+    }
+}
+@media (max-width:500px){
+    .state{
+        text-align: center;
+        padding-left:5px;
+        padding-right:5px;
+        color:#EAEAE0;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size:20px;
+    }
+}
+
+.footerSdiv{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2,9 +2,9 @@
     <div class="container-navi container-fluid">
         <div class="conConNavi container">
             <div class="row p-2">
-                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12">
                     <div class="row ">
-                        <div class="col-lg-2 col-md-3 col-sm-2 col-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
                             <img class="img-v img-responsive" src="../assets/st,small,845x845-pad,1000x1000,f8f8f8.u9.jpg" />
                         </div>
                         <div class="ss col-lg-10 col-md-10 col-sm-10 col-10">
@@ -17,11 +17,11 @@
                 <div class="col-lg-7 col-md-7 col-sm-12 col-12 p-3 naviContainer ">
                         <div class="row navigationChoose">
                             <div id="asd" class="navi col-lg-2 col-md-2 col-sm-2 col-2 p-2" (click)="clicked('home')">Home</div>
-                            <div class="navi col-lg-2 col-md-3 col-sm-3 col-3 p-2" 
+                            <div class="navi col-lg-3 col-md-4 col-sm-4 col-3 p-2" 
                             (click)="clicked('characters')">Characters</div>
-                            <div class="navi col-lg-1 col-md-2 col-sm-2 col-2 p-2" (click)="clicked('about')">About</div>
-                            <div class="navi col-lg-3 col-md-4 col-sm-4 col-3 p-2" (click)="clicked('details')">Anime Details</div>
-                            <div class="navi col-lg-1 col-md-1 col-sm-1 col-2 p-2" (click)="clicked('more')">More</div>
+                            <div class="navi col-lg-2 col-md-2 col-sm-2 col-2 p-2" (click)="clicked('about')">About</div>
+                            <div class="navi col-lg-2 col-md-3 col-sm-3 col-2 p-2" (click)="clicked('details')">Details</div>
+                            <div class="navi col-lg-2 col-md-1 col-sm-1 col-2 p-2" (click)="clicked('more')">More</div>
                         </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <div *ngFor="let cTask of imgCharacters; index as num" [ngClass]="'designCha col-lg-3 col-md-4 col-sm-6 col-12'">
                     <div class="card-cha1 card">
                         <div class="card-Cha card-body">
-                            <img [src]="cTask[0]" class="srcImgCha img-fluid" />
+                            <img [src]="cTask[0]" class="srcImgCha img-responsive" />
                             <div class="cardTitle card-title">
                                 <h5>{{cTask[1]}}</h5>
                             </div>
@@ -82,17 +82,14 @@
 
 
     <div class="imageFirst-page container-fluid" id="about">
-        <div class="containerShadow">
-                <img class="image_First img-responsive" src="../assets/firstpage.jpg" />
-        </div>
         <div class="asdss">
             <div class="row">
-                <div class="col-lg-6"></div>
+                <div class="col-lg-6 "></div>
                 <div class="sssss col-lg-6 col-md-12">
                     <div class="containShadow">
                         <div class="divForP">
                             <div class="row">
-                                <div class="asd col-lg-12 bg-primary">
+                                <div class="asd col-lg-12">
                                     <img src="../assets/maxresdefault.jpg" class="imgSeC img-fluid" />
                                 </div>
                                 <div class="col-lg-12">
@@ -192,7 +189,7 @@
                         <div class="row">
                             <div class="colMW col-lg-4 col-md-6" *ngFor="let vMoreW of imgMoreWatch; index as numMW">
                                 <div class="divRowsM">
-                                    <img [src]="vMoreW[0]" class="simgMore" />
+                                    <img [src]="vMoreW[0]" class="simgMore img-responsive" />
                                     <div class="nameShadow">
                                         <div class="shadowName"></div>
                                         <div class="nameCha" >
@@ -212,7 +209,27 @@
 
 
 
+    <div class="conFooter container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="divclassesIm">
+                        <img src="../assets/footer/1.png" class="imageFoot img-responsive" />
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footerSdiv">
+                        <p class="state">
+                            Honkaio Station - UI Web Design
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
 
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
